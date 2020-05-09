@@ -15,6 +15,7 @@ public class Main extends Application {
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
+			primaryStage.setTitle("Moodle 用テストつくります. ver.1.0b");
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
