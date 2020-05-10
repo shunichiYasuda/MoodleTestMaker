@@ -1,0 +1,64 @@
+//"{\toi:***}" のリスト
+		//List<String> toiList = new ArrayList<String>();
+		// 選択肢のリスト
+		List<String> itemList = new ArrayList<String>();
+		// mainArea の文字列から{\toi}を探す。
+		String str = mainArea.getText();
+		//以下の正規表現で{\toi：*}を探している。
+		//"\\{" は '{' 、\\ は'\' のエスケープ。次の"\\\t" は特殊文字'\'をエスケープした後で
+		//"\t" をエスケープするためにもう一つ'\'が必要。
+		String regex = "\\{\\\\toi:.+?}";
+		Pattern p = Pattern.compile(regex);
+		Matcher m = p.matcher(str);
+		int count = 0;
+		while(m.find()) {
+			String s = m.group().replace("{\\toi:", "");
+			s=s.replace("}", "");
+			itemList.add(s);
+			count++;
+		}
+		for(String s:itemList) {
+			System.out.println(s);
+		}
+		System.out.println("count ="+count);
+		System.out.println("Listのサイズ" + itemList.size());
+		String[] itemArray = new String[itemList.size()];
+		for(int i=0;i<itemArray.length;i++) {
+			itemArray[i] = itemList.get(i);
+		}
+		System.out.println("as String[]");
+		for(String s: itemArray) {
+			System.out.println(s);
+		}
+		//dummy の追加
+		List<String> allList = new ArrayList<String>(itemList);
+		List<String> dummyList; 
+		if(!dummyArea.getText().trim().isEmpty()) {
+			dummyList = new ArrayList<String>();
+			String[] array = dummyArea.getText().split(",");
+			for(String s:array) {
+				dummyList.add(s);
+				System.out.println("in dummy"+s);
+			}
+			allList.addAll(dummyList);
+			System.out.println("in if(dummyArea...");
+			System.out.println("dummyArea size="+ array.length);
+		}
+		for(String s: allList) {
+			System.out.println(s);
+		}
+		System.out.println("allList のサイズ="+allList.size());
+		
+		//以上で選択肢の配列が allList に入った。
+		//itemList の上から処理する。
+		//:{1:MULTICHOICE:カリフォルニア#不正解~%100%アリゾナ#OK
+		//~選択肢1#不正解~選択肢2#不正解~選択肢3#不正解~選択肢4#不正解
+		//~選択肢5#不正解}
+		String str1= str;
+		for(String s: allList) {
+			String oldStr = "{\\toi:"+s+"}";
+			System.out.println(oldStr);
+			//String regexTmp = "{\\toi:"+s+"}";
+			str1 = str1.replace(oldStr, "hoge");
+		}
+		System.out.println(str1);

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/修正されたカテゴリテキストおよび問題の修正</text>
+
+    </category>
+  </question>
+
+<!-- question: 27840  -->
+  <question type="cloze">
+    <name>
+      <text>独立した穴埋め問題</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="color: red;">次の市がある州を選択してください。<br>
+この文書の: {1:MULTICHOICE:=カリフォルニア#OK~アリゾナ#不正解~選択肢1#不正解~選択肢2#不正解~選択肢3#不正解~選択肢4#不正解~選択肢5#不正解~選択肢6#不正解}は「限界生産力」
+と呼ばれる。<br>
+次の問題を編集する際には:{1:MULTICHOICE:カリフォルニア#不正解~%100%アリゾナ#OK~選択肢1#不正解~選択肢2#不正解~選択肢3#不正解~選択肢4#不正解~選択肢5#不正解~選択肢6#不正解}
+が重要であり、さらにいえば: {1:MULTICHOICE:=カリフォルニア#OK~アリゾナ#不正解~選択肢1#不正解~選択肢2#不正解~選択肢3#不正解~選択肢4#不正解~選択肢5#不正解~選択肢6#不正解}<br>
+フェニックス: {1:MULTICHOICE:%0%カリフォルニア#不正解~=アリゾナ#OK~選択肢1#不正解~選択肢2#不正解~選択肢3#不正解~選択肢4#不正解~選択肢5#不正解~選択肢6#不正解}<br>
+フランスの首都は {2:SHORTANSWER:%100%パリ#おめでとうございます!~%50%マルセイユ#いいえ、それはフランスで二番目に大きい都市です~*#不正解 フランスの首都はパリです。}</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+  </question>
+  
+
+</quiz>

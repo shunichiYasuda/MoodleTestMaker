@@ -1,0 +1,11 @@
+\begin{enumerate}
+	\item 関数$y=f(x)$ との表記があったら、この関係で原因は{\toi}であり、結果は{\toi}である。
+	\item また、これをグラフにする場合、一般的には横軸は{\toi}、縦軸には{\toi}をとる。
+	\item  さらに$\frac{df}{dx}>0$であれば、グラフは{\toi}、$\frac{df}{dx}<0$であれば{\toi}、$\frac{df}{dx}=0$であれば横軸に対して{\toi}なグラフになる。	
+\end{enumerate}
+{\bf 選択肢} \\
+\begin{tabular}{llll}
+	\ban{1} $y$ & \ban{2} $f$ & \ban{3} $x$ & \ban{4} 右上がり \\
+	\ban{5} 右下がり & \ban{6} 垂直 & \ban{7} 水平 & 
+\end{tabular} \\
+

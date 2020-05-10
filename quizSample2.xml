@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/test2020 デフォルト</text>
+
+    </category>
+  </question>
+
+<!-- question: 27868  -->
+  <question type="cloze">
+    <name>
+      <text>問題名はここ</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>以下の空欄に当てはまる言葉を選択しなさい。以下は番号付きリストで編集。</p>
+        <ol><li>関数\( y=f(x) \)との表記があったら、この関係で原因は {1:MULTICHOICE:=\(x\)#OK~\(y\)#不正解}であり、結果は{1:MULTICHOICE:=\(x\)#不正解~\(y\)#OK}である。</li>
+          <li>これをグラフにする場合、一般的には横軸は{1:MULTICHOICE:=\(x\)#OK~\(y\)#不正解}、縦軸には{1:MULTICHOICE:=\(x\)#不正解~\(y\)#OK}をとる。</li>
+          <li>\(\frac{df}{dx}&lt;0\)であれば{1:MULTICHOICE:=右下がり#OK~右上がり#不正解}、、\(\frac{df}{dx}=0\)であれば横軸に対して{1:MULTICHOICE:=右下がり#不正解~右上がり#OK}なグラフになる。</li>
+        </ol>
+        ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+  </question>
+
+</quiz>
