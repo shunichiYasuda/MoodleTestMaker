@@ -17,7 +17,6 @@
                   <Button mnemonicParsing="false" onAction="#translate" text="変換..." />
                   <Button mnemonicParsing="false" onAction="#clearAction" text="Clear" />
                   <Button mnemonicParsing="false" onAction="#quitAction" text="Quit" />
-                  <Button mnemonicParsing="false" onAction="#test" text="Test" />
               </items>
             </ToolBar>
             <TextArea fx:id="mainArea" layoutY="40.0" prefHeight="227.0" prefWidth="672.0" />
